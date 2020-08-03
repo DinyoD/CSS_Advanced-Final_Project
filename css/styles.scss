@@ -4,11 +4,12 @@
 @import '../css/settings/_settings-colors';
 @import '../css/settings/_settings-box-shadows';
 @import '../css/settings/_settings-breakpoint';
-@import '../css/settings/_settings-typography';
 @import '../css/settings/_settings-layout';
 
 
 @import '../css/generic/_generic-reset';
+
+@import '../css/elements/_elements-typography';
 
 @import '../css/objects/_objects-container';
 @import '../css/objects/_objects-displays';
@@ -22,6 +23,7 @@
 @import '../css/components/_components-card';
 @import '../css/components/_components-course-program';
 @import '../css/components/_components-images';
+@import '../css/components/_components-applaying-section';
 
 @import '../css/utilities/utilities-dots-border';
 

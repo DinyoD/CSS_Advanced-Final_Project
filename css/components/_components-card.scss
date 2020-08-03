@@ -136,21 +136,26 @@
     grid-template-rows: repeat(3, auto);
     grid-template-columns: auto auto;
 
-    column-gap: 32px;
+    column-gap: 38px;
 
     &__img {
       grid-row: 1 / 3;
       grid-column: 1 / 2;
     }
+
+    &__text__name,
+    &__text__position {
+
+      grid-column: 2 / 3;
+      text-align: start;
+    }
   
     &__text__name {
       grid-row: 1 / 2 ;
-      grid-column: 2 / 3;
     }
   
     &__text__position {
       grid-row: 2 / 3 ;
-      grid-column: 2 / 3;
     }
   
     &__text__bio {

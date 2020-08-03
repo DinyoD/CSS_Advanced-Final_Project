@@ -1,20 +1,20 @@
 .btn {
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
 
-    font-size: 16px;
-    text-transform: uppercase;
-    line-height: 1.25;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 100px;
 
-    padding: 14px 32px;
-    border-radius: 100px;
+  @include BoxShadow(4);
+  background-color: $secondary-800;
+  color: $white;
 
-    @include BoxShadow(4);
-    background-color: $secondary-800;
-    color: $white;
-
-    cursor: pointer;
+  cursor: pointer;
 
   &:hover {
-
     @include BoxShadow(1);
   }
 

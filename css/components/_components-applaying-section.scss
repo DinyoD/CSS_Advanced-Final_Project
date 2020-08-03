@@ -1,0 +1,83 @@
+.applying-section {
+
+    &__container {
+        margin: 64px 0;
+
+        grid-column: 2 / 3;
+
+        display: grid;
+
+        color: $white;
+    }
+
+    &__description {
+
+        &__title {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__form {
+        display: grid;
+        row-gap: 36px;
+
+        &__input {
+
+            padding: 16px;
+            color: $white;
+            background-color: $blue-300;
+
+            height: 52px;
+
+            border: 1px solid $white;
+            border-radius: 6px;
+
+            &::placeholder {
+                color: $white;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+
+        .btn {
+            margin-top: 10px;
+            height: 48px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+    }
+
+    @include bp('desktop') {
+
+        &__container {
+            margin-left: 179px;
+            margin-right: 179px;
+        }
+
+        &__description {
+
+            &__title {
+
+                text-align: center;
+            }
+
+            &__text {
+                margin: 0 107px;
+                text-align: center;
+            }
+        }
+
+        &__form {
+
+            grid-template-rows: none;
+            grid-template-columns: repeat(4, 1fr);
+
+            column-gap: 32px;
+
+            .btn {
+                margin: 0 12px;
+                width: 140px;
+            }
+        }
+    }
+}
