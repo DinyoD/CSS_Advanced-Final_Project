@@ -1,0 +1,121 @@
+.main__program {
+  background-color: $secondary-900;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+
+  padding: 64px 0;
+
+  &__card {
+    grid-column: 2 / 3;
+  }
+
+  &__inputs-label {
+    grid-column: 2 / 3;
+
+    margin: 16px 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__lessons {
+    grid-column: 2 / 3;
+
+    display: grid;
+    row-gap: 16px;
+
+    .lesson {
+      height: fit-content;
+      border-radius: 6px;
+      background-color: $white;
+
+      margin-bottom: 0;
+
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: bold;
+      padding: 14px 56px 16px 14px;
+      border: none;
+
+      position: relative;
+
+      &:after {
+        content: url("../../assets/Icons/main/tik.svg");
+
+        position: absolute;
+        right: 1em;
+        top: 25%;
+
+        z-index: 3;
+      }
+    }
+  }
+
+  &__img {
+    display: none;
+  }
+
+  &:before,
+  &:after {
+    display: inline-block;
+    width: 100%;
+    height: 0px;
+    border-top: 10px dotted $grey-250;
+
+    content: "";
+
+    position: absolute;
+    z-index: 2;
+  }
+
+  &::before {
+    top: -6px;
+  }
+
+  &::after {
+    bottom: -6px;
+  }
+
+  @include bp("desktop") {
+    grid-template-columns: 1fr 65px 675px 550px 1fr;
+    grid-template-rows: auto 34px 248px;
+
+    row-gap: 12px;
+
+    &__card {
+      grid-column: 2 / 4;
+      grid-row: 1 / 2;
+    }
+
+    &__inputs-label {
+      margin-top: 12px;
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
+
+    &__lessons {
+      grid-column: 3 / 4;
+      grid-row: 3 / 4;
+
+      row-gap: 13px;
+
+      .lesson {
+        width: 675px;
+        height: 50px;
+
+        // font-weight: normal;
+      }
+    }
+
+    &__img {
+      display: block;
+      grid-column: 4 / 6;
+      grid-row: 3 / 4;
+
+      justify-self: center;
+      align-self: center;
+    }
+  }
+}

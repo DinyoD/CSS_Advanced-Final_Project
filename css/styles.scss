@@ -1,0 +1,26 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+@import url("../../fonts/Lato2OFLWeb/Lato/latofonts.css");
+
+@import '../css/settings/_settings-colors';
+@import '../css/settings/_settings-box-shadows';
+@import '../css/settings/_settings-breakpoint';
+@import '../css/settings/_settings-typography';
+@import '../css/settings/_settings-layout';
+
+
+@import '../css/generic/_generic-reset';
+
+@import '../css/objects/_objects-container';
+@import '../css/objects/_objects-displays';
+
+@import '../css/components/_components-header';
+@import '../css/components/_components-navigation';
+@import '../css/components/_components-button';
+@import '../css/components/_components-footer';
+@import '../css/components/_components-label';
+@import '../css/components/_components-CTA';
+@import '../css/components/_components-card';
+@import '../css/components/_components-course-program';
+
+@import '../css/utilities/utilities-dots-border';
+

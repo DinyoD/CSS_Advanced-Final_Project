@@ -1,0 +1,47 @@
+.page--course__label {
+  padding-top: 64px;
+
+  background-color: $blue-400;
+
+  position: relative;
+
+  .site__label__text {
+    grid-column: 1 / 4;
+  }
+
+  .label {
+    padding: 4px 8px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 14px;
+
+    background-color: $secondary-500;
+    color: $white;
+
+    width: fit-content;
+    margin: 0 auto;
+
+    border-radius: 4px;
+  }
+
+  .title {
+    color: $white;
+    margin: 24px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  @include bp("desktop") {
+    .title {
+      width: 645px;
+      margin: 24px auto;
+
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+}

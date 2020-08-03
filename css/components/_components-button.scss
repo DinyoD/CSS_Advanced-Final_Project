@@ -1,0 +1,26 @@
+.btn {
+
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1.25;
+
+    padding: 14px 32px;
+    border-radius: 100px;
+
+    @include BoxShadow(4);
+    background-color: $secondary-800;
+    color: $white;
+
+    cursor: pointer;
+
+  &:hover {
+
+    @include BoxShadow(1);
+  }
+
+  &--entry {
+    font-size: 13px;
+    line-height: 16px;
+    padding: 10px 22px;
+  }
+}

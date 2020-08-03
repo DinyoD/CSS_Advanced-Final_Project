@@ -1,0 +1,98 @@
+.page__header {
+  
+  @include BoxShadow(2);
+  align-content: center;
+  background-color: $white;
+
+  position: relative;
+
+  .logo--su-kids {
+    height: 60%;
+    margin-right: auto;
+
+    &-desktop {
+      display: none;
+    }
+  }
+
+  .icon--triangle {
+    height: 20px;
+    margin-right: 16px;
+
+    &-desktop {
+      display: none;
+    }
+  }
+
+  .icon--search {
+    margin-right: 20px;
+
+    &-desktop {
+      display: none;
+    }
+  }
+
+  .icon--menu {
+    margin-left: 24px;
+    order: 5;
+    cursor: pointer;
+
+    &:hover ~ .header__nav{
+      width: 100%;
+
+      position: absolute;
+      bottom: -250px;
+      z-index: 2;
+      left: 0;
+      right: 0;
+      .nav__list {
+
+        width: 100%;
+
+        display: grid;
+        grid-template-rows: repeat(5, 50px);
+        
+        justify-content: stretch;
+        align-items: stretch;
+
+        li {
+
+          background-color: $grey-100;
+          border-bottom: 0.5px solid $grey-500;
+          align-content: center;
+          padding: 15px 20px;
+
+          a {
+
+            color: $grey-500;
+            font-weight: bold;
+
+          }
+        }
+
+      }
+    }
+  }
+
+  /* DESKTOP STYLES */
+
+  @include bp("desktop") {
+
+    .logo--su-kids,
+    .icon--triangle,
+    .icon--search {
+      &-mobile {
+        display: none;
+      }
+
+      &-desktop {
+        display: inline-block;
+      }
+    }
+    .icon--menu {
+      display: none;
+    }
+  }
+
+
+}
