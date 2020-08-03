@@ -16,7 +16,6 @@ html {
 body,
 section,
 option {
-  
   font: inherit;
 }
 
@@ -46,6 +45,12 @@ h2 {
   font-weight: 600;
   font-size: 30px;
   line-height: 36px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 ul {

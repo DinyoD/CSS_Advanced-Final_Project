@@ -4,4 +4,11 @@
 
     border-left: 10px dotted $secondary-100;
     border-bottom: 10px dotted $secondary-100;
+
+    &--trainers {
+        width: auto;
+        height: 0px;
+
+        border-bottom: 10px dotted $primary-50;
+    }
 }

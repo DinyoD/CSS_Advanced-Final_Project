@@ -1,23 +1,54 @@
 .page {
-
+  
   &__header,
   &__label,
   &__footer,
   &__main {
-
+    
     display: grid;
     grid-template-columns: 20px 1fr 20px;
   }
-
+  
   &__header {
     height: 72px;
   }
+  
+  &__footer {
+    height: 567px;
+  }
+
+
+  /* DESKTOP STYLES */
+
+  @include bp("desktop") {
+
+    &__header,
+    &__label,
+    &__footer,
+    &__main {
+
+      grid-template-columns: 1fr 1290px 1fr;
+    }
+  
+    &__header {
+      height: 74px;
+    }
+
+    &__footer {
+      height: 324px;
+    }
+   
+  }
+
+}
+
+.page--course {
 
   &__label {
     height: 302px;
   }
 
-  .page--course__main {
+  &__main {
     
     margin-top: 566px;
     row-gap: 32px;
@@ -73,27 +104,9 @@
 
   }
 
-  &__footer {
-    height: 567px;
-  }
-
-  /* DESKTOP STYLES */
-
   @include bp("desktop") {
 
-    &__header,
-    &__label,
-    &__footer {
-
-      grid-template-columns: 1fr 1290px 1fr;
-    }
-  
-    &__header {
-      height: 74px;
-    }
-   
-    .page--course__main {
-      grid-column: 1 / 4;
+    &__main {
   
       margin-top: 152px;
   
@@ -207,12 +220,71 @@
         grid-row: 5 / 6;
       }
     }
+  }  
+}
 
-    &__footer {
-      height: 324px;
-    }
+.page--trainers {
+
+  &__label {
+    height: 356px;
   }
 
+  &__main {
+
+    
+    &__top-trainers {
+
+      margin-top: 48px;
+      grid-column: 2 / 3;
+    }
+
+    &__all-trainers {
+
+      margin-top: 64px;
+      grid-column: 2 / 3;
+
+      display: grid;
+      grid-template-rows: repeat(4, auto);
+      justify-content: center;
+
+
+    }
+
+    .dots--trainers {
+      grid-column: 2 / 3;
+    }
+
+  }
+
+  @include bp("desktop") {
+
+    &__label {
+      height: 256px;
+    }
+
+    &__main {
+
+      
+      &__top-trainers {
+
+        margin: 96px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+      }
+
+      &__all-trainers {
+
+        margin-left: 113px;
+        margin-right: 113px;
+
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      }
+    }
+  } 
 }
 
 

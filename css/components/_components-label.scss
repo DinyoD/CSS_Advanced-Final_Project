@@ -45,3 +45,39 @@
     }
   }
 }
+
+.page--trainers__label {
+
+  padding-top: 64px;
+  background-color: $secondary-600;
+
+  &__wrapper {
+
+    grid-column: 2 / 3;
+
+  }
+
+  &__title,
+  &__text {
+
+    color: $white;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+
+  @include bp('desktop') {
+
+    &__title {
+      width: 305px;
+      margin: 0 auto 24px auto;
+    }
+    &__text {
+      width: 850px;
+      margin: 0 auto;
+    }
+  }
+}
