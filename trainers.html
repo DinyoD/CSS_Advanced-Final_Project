@@ -8,104 +8,134 @@
 </head>
 <body>
 
-    <div class="site">
+    <div class="page">
 
-        <header class="site__header">
+        <header class="page__header page--course__header">
 
             <div class="container display--horizontal">
-    
-                <img class="icon--triangle" src="./assets/Icons/menu/triangle-orange.svg" alt="">
-    
-                <img class="logo--su-kids" src="./assets/Images/menu/Logo-horizontal.svg" alt="">
-    
+
+                <div class="icon--triangle">
+                    <img class="icon--triangle-mobile" src="./assets/Icons/menu/triangle-grey.svg" alt="">
+                    <img class="icon--triangle-desktop" src="./assets/Icons/menu/triangle-orange.svg" alt="">
+                </div>
+
+                <div class="logo--su-kids">
+                    <img class="logo--su-kids-mobile" src="./assets/Images/menu/Logo-vertical.svg" alt="">
+                    <img class="logo--su-kids-desktop" src="./assets/Images/menu/Logo-horizontal.svg" alt="">
+                </div>
+
+                <div class="icon--menu">
+                    <img src="./assets/Icons/menu/menu.svg" alt="">
+                </div>
+
                 <nav class="header__nav">
                     <ul class="nav__list display--horizontal">
                         <li>
-                            <a href="./courses.html">обучения</a>
+                            <a href="#">обучения</a>
                         </li>
-    
+
                         <li>
                             <a href="#">Събития</a>
                         </li>
-    
+
                         <li>
-                            <a href="#">Преподаватели</a>
+                            <a href="./trainers.html">Преподаватели</a>
                         </li>
-    
+
                         <li>
                             <a href="#">Блог</a>
                         </li>
-    
+
                         <li>
                             <a href="#">Контакти</a>
                         </li>
                     </ul>
                 </nav>
-    
-                <img class="icon--search" src="./assets/Icons/menu/loupe.svg" alt="">
-    
-                <button class="btn btn--orange btn--entry">вход</button>
-    
+
+                <div class="icon--search">
+                    <img class="icon--search-desktop" src="./assets/Icons/menu/loupe.svg" alt="">
+                </div>
+
+                <button class="btn btn--entry">вход</button>
+
             </div>
-    
+
         </header>
 
-        
-        <footer class="site__footer">
+        <section class="page__label page--course__label">
+
+        </section>
+
+        <main class="page__main page--course__main">
+
+            
+
+        </main>
+
+        <footer class="page__footer page--course__footer">
 
             <div class="container display--footer">
 
-                <img class="footer__img" src="./assets/Images/footer/eye-man.svg" alt="">
-
-                <div class="footer__section">
-                    <p class="footer__section__title">Softuni Kids</p>
-                    <ul class="footer__list">
-                        <li class="footer__list__item"><a href="">Начало</a></li>
-                        <li class="footer__list__item"><a href="">Летни академии</a></li>
-                        <li class="footer__list__item"><a href="">Преподаватели</a></li>
-                        <li class="footer__list__item"><a href="">Блог</a></li>
-                        <li class="footer__list__item"><a href="">Контакти</a></li>
-                        <li class="footer__list__item"><a href="">Общи условия</a></li>
-                        <li class="footer__list__item"><a href="">Лични данни</a></li>
-                    </ul>
+                <div class="footer__img">
+                    <img  src="./assets/Images/footer/eye-man.svg" alt="">
                 </div>
 
-                <div class="footer__section">
-                    <p class="footer__section__title">Всички обучения</p>
-                    <ul class="footer__list">
-                        <li class="footer__list__item"><a href="#">Курсове</a></li>
-                        <li class="footer__list__item"><a href="#">Събития</a></li>
-                    </ul>
-                </div>
+                <div class="footer__sections-wrapper">
 
-                <div class="footer__section">
-                    <p class="footer__section__title">Всички инициативи</p>
-                    <ul class="footer__list">
-                        <li class="footer__list__item"><a href="#">Software University</a></li>
-                        <li class="footer__list__item"><a href="#">SoftUni Digital</a></li>
-                        <li class="footer__list__item"><a href="#">SoftUni Creative</a></li>
-                        <li class="footer__list__item"><a href="#">SoftUni Svetlina</a></li>
-                        <li class="footer__list__item"><a href="#">SoftUni Foundation</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__section">
-                    <p class="footer__section__title">Намери ни</p>
-                    <ul class="footer__list">
-                        <div class="footer__social">
-
-                            <a href="#">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            
-                            <a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-
-                        </div>
+                    <section class="footer__section footer__section--kids">
+                        <p class="footer__section__title">Softuni Kids</p>
+                        <ul class="footer__list  footer__list--two-columns">
+                            <li class="footer__list__item"><a href="">Начало</a></li>
+                            <li class="footer__list__item"><a href="">Летни академии</a></li>
+                            <li class="footer__list__item"><a href="">Преподаватели</a></li>
+                            <li class="footer__list__item"><a href="">Блог</a></li>
+                            <li class="footer__list__item"><a href="">Контакти</a></li>
+                            <li class="footer__list__item"><a href="">Общи условия</a></li>
+                            <li class="footer__list__item"><a href="">Лични данни</a></li>
+                        </ul>
+                    </section>
     
-                        <p class="footer__all-rights"> &copy; 2016-2020 - SoftUni Kids. All Rights Reserved.</p>
-                    </ul>
+                    <section class="footer__section footer__section--courses">
+                        <p class="footer__section__title">Всички обучения</p>
+                        <ul class="footer__list">
+                            <li class="footer__list__item"><a href="#">Курсове</a></li>
+                            <li class="footer__list__item"><a href="#">Събития</a></li>
+                        </ul>
+                    </section>
+    
+                    <section class="footer__section footer__section--initiatives">
+                        <p class="footer__section__title">Всички инициативи</p>
+                        <ul class="footer__list">
+                            <li class="footer__list__item"><a href="#">Software University</a></li>
+                            <li class="footer__list__item"><a href="#">SoftUni Digital</a></li>
+                            <li class="footer__list__item"><a href="#">SoftUni Creative</a></li>
+                            <li class="footer__list__item"><a href="#">SoftUni Svetlina</a></li>
+                            <li class="footer__list__item"><a href="#">SoftUni Foundation</a></li>
+                        </ul>
+                    </section>
+    
+                    <section class="footer__section  footer__section--social">
+    
+                        <p class="footer__section__title">Намери ни</p>
+    
+                        <ul class="footer__section__social-links">
+    
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+    
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            
+                        </ul>
+    
+                    </section>
+    
+                    <section class="footer__section footer__section--rights">
+                        <p class="footer__section__all-rights"> &copy; 2016-2020 - SoftUni Kids. All Rights Reserved.</p>
+                    </section>
+
                 </div>
 
             </div>
