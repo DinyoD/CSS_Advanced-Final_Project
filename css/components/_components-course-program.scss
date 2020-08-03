@@ -1,5 +1,5 @@
 .main__program {
-  background-color: $secondary-900;
+  background-color: $secondary-400;
   position: relative;
 
   display: grid;
@@ -26,6 +26,8 @@
     display: grid;
     row-gap: 16px;
 
+    list-style-position: outside;
+
     .lesson {
       height: fit-content;
       border-radius: 6px;
@@ -36,7 +38,7 @@
       font-size: 18px;
       line-height: 22px;
       font-weight: bold;
-      padding: 14px 56px 16px 14px;
+      padding: 14px 56px 16px 28px;
       border: none;
 
       position: relative;
@@ -105,7 +107,6 @@
         width: 675px;
         height: 50px;
 
-        // font-weight: normal;
       }
     }
 

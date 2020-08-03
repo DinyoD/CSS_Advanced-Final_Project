@@ -1215,7 +1215,7 @@ p {
 }
 
 .main__program {
-  background-color: #FF7100;
+  background-color: #ffcb29;
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -1247,6 +1247,7 @@ p {
   display: -ms-grid;
   display: grid;
   row-gap: 16px;
+  list-style-position: outside;
 }
 
 .main__program__lessons .lesson {
@@ -1259,7 +1260,7 @@ p {
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
-  padding: 14px 56px 16px 14px;
+  padding: 14px 56px 16px 28px;
   border: none;
   position: relative;
 }
