@@ -1,6 +1,5 @@
 @import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
-@import url("../../fonts/Lato2OFLWeb/Lato/latofonts.css");
-@import url("../../fonts/lato/lato.css");
+@import url("../fonts/lato/lato.css");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .page {
@@ -311,8 +310,8 @@
             column-gap: 36px;
   }
   .page--trainers__main__all-trainers {
-    margin-left: 113px;
-    margin-right: 113px;
+    width: 1064px;
+    margin: 64px auto 0 auto;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[4];
@@ -322,9 +321,47 @@
   }
   .page--trainers__main__applying-section {
     height: 412px;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
+    -ms-grid-columns: 1fr 1290px 1fr;
+        grid-template-columns: 1fr 1290px 1fr;
   }
+}
+
+.page--contact__map {
+  height: 426px;
+  margin-bottom: 180px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1290px 1fr;
+      grid-template-columns: 1fr 1290px 1fr;
+  position: relative;
+}
+
+.page--contact__map__img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.page--contact__map__img img {
+  width: 100%;
+  height: auto;
+}
+
+.page--contact__map__card {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.page--contact__footer {
+  margin-top: 96px;
 }
 
 html {
@@ -591,6 +628,17 @@ p {
   font-size: 13px;
   line-height: 16px;
   padding: 10px 22px;
+}
+
+.btn--white {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: #FFFFFF;
+  color: #FF9100;
+  border: 1px solid #FF9100;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page__footer {
@@ -1107,6 +1155,7 @@ p {
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
   justify-items: center;
+  /* DESKTOP STYLES */
 }
 
 .card--trainer__img {
@@ -1200,7 +1249,7 @@ p {
   }
   .card--trainer-small__img:hover:after {
     display: block;
-    content: url("../../assets/Images/main/learn-more.svg");
+    content: url("../assets/Images/main/learn-more.svg");
     background-color: rgba(255, 145, 0, 0.8);
     padding: 40px 51px;
     position: absolute;
@@ -1212,6 +1261,57 @@ p {
     display: -ms-grid;
     display: grid;
   }
+}
+
+.card--address {
+  width: 520px;
+  height: 382px;
+  padding: 32px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr auto;
+      grid-template-rows: 1fr 1fr auto;
+  position: absolute;
+  top: 128px;
+  z-index: 2;
+}
+
+.card--address__title {
+  color: #41BEAD;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.card--address__text {
+  margin-bottom: 12px;
+}
+
+.card--address__working-hours__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.card--address__working-hours__hours {
+  color: #FF9100;
+}
+
+.card--address__btn {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  width: 242px;
+  margin: 0 auto;
 }
 
 .main__program {
@@ -1266,7 +1366,7 @@ p {
 }
 
 .main__program__lessons .lesson:after {
-  content: url("../../assets/Icons/main/tik.svg");
+  content: url("../assets/Icons/main/tik.svg");
   position: absolute;
   right: 1em;
   top: 25%;
@@ -1372,8 +1472,15 @@ p {
   color: #FFFFFF;
 }
 
+.applying-section__description {
+  margin-bottom: 32px;
+}
+
 .applying-section__description__title {
   margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .applying-section__form {
@@ -1424,26 +1531,31 @@ p {
 
 @media (min-width: 1330px) {
   .applying-section__container {
-    margin-left: 179px;
-    margin-right: 179px;
+    width: 936px;
+    margin: 64px auto 0 auto;
   }
   .applying-section__description__title {
     text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
   }
   .applying-section__description__text {
-    margin: 0 107px;
+    width: 850px;
+    margin: 0 auto;
     text-align: center;
   }
   .applying-section__form {
     -ms-grid-rows: none;
         grid-template-rows: none;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (228px)[4];
+        grid-template-columns: repeat(4, 228px);
+    margin: 0 auto 112px auto;
     -webkit-column-gap: 32px;
             column-gap: 32px;
   }
   .applying-section__form .btn {
-    margin: 0 12px;
+    margin: 0 16px;
     width: 140px;
   }
 }
