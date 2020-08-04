@@ -80,6 +80,17 @@
     bottom: -6px;
   }
 
+
+  /* TABLET STYLES */
+
+  @include bp("tablet") {
+
+    grid-template-columns: 100px 1fr 100px;
+  }
+  
+    
+  /* DESKTOP STYLES */
+
   @include bp("desktop") {
     grid-template-columns: 1fr 65px 675px 550px 1fr;
     grid-template-rows: auto 34px 248px;

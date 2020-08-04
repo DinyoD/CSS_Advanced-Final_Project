@@ -1,17 +1,16 @@
 .site__label__CTA {
-
   grid-column: 2 / 3;
   background-color: $white;
   border-radius: 12px;
   padding: 0 24px;
-  
+
   align-items: center;
-  
+
   @include BoxShadow(1);
- 
+
   display: grid;
   grid-template-rows: 144px 100px 2px 100px 2px 100px 2px 100px;
-  
+
   position: absolute;
   top: 245px;
   right: 0;
@@ -27,10 +26,9 @@
   }
 
   &__info {
-
     justify-self: start;
     align-self: center;
- 
+
     display: grid;
     justify-content: center;
     grid-template-columns: 32px auto;
@@ -39,7 +37,6 @@
     align-items: center;
 
     .info__icon {
-
       width: 32px;
       height: 32px;
       text-align: center;
@@ -77,32 +74,42 @@
     border: none;
   }
 
+  /* TABLET STYLES */
 
-    /*DESKTOP STYLES */
+  @include bp("tablet") {
 
-    @include bp('desktop') {
-
-      height: 112px;
-      padding: 0;
-      grid-template-columns: 291px auto 2px auto 2px auto 2px auto;
-      grid-template-rows: none;
-    
-      &__btn {
-        justify-self: center;
-
-        text-align: center;
-      }
-    
-      &__info {
-        justify-self: center;
-        
-      }
-    
-      hr {
-        width: 2px;
-        height: 24px;
-
-      }
+    .btn {
+      max-width: 50%;
     }
-}
 
+    &__info{
+
+      justify-self: center;
+    }
+  }
+
+
+  /*DESKTOP STYLES */
+
+  @include bp("desktop") {
+    height: 112px;
+    padding: 0;
+    grid-template-columns: 291px auto 2px auto 2px auto 2px auto;
+    grid-template-rows: none;
+
+    &__btn {
+      justify-self: center;
+
+      text-align: center;
+    }
+
+    &__info {
+      justify-self: center;
+    }
+
+    hr {
+      width: 2px;
+      height: 24px;
+    }
+  }
+}

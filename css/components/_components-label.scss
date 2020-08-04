@@ -34,6 +34,19 @@
     line-height: 36px;
   }
 
+
+  /* TABLET STYLES */
+
+  @include bp("tablet") {
+
+     .title {
+      margin: 24px 100px;
+     }
+  }
+    
+      
+  /* DESKTOP STYLES */
+
   @include bp("desktop") {
     .title {
       width: 645px;

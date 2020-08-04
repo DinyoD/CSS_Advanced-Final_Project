@@ -16,6 +16,20 @@
     height: 567px;
   }
 
+    /* TABLET STYLES */
+
+  @include bp("tablet") {
+
+    &__header,
+    &__label,
+    &__footer,
+    &__main {
+      display: grid;
+      grid-template-columns: 100px 1fr 100px;
+    }
+
+  }
+
   /* DESKTOP STYLES */
 
   @include bp("desktop") {
@@ -50,6 +64,8 @@
 
     margin-top: 566px;
     row-gap: 32px;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
 
     .main__information {
       grid-column: 2 / 3;
@@ -103,6 +119,20 @@
     margin-top: 96px;
   }
 
+
+  /* TABLET STYLES */
+
+  @include bp("tablet") {
+
+    &__main {
+      
+      grid-template-columns: 100px 1fr 100px;
+    }
+  }
+
+  
+  /* DESKTOP STYLES */
+  
   @include bp("desktop") {
 
     &__main {
