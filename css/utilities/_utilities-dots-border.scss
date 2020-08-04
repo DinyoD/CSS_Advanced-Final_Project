@@ -1,14 +1,74 @@
-.dots {
-    width: 0px;
-    height: 0px;
 
-    border-left: 10px dotted $secondary-100;
-    border-bottom: 10px dotted $secondary-100;
+.page--trainers__main__top-trainers {
 
-    &--trainers {
-        width: auto;
+    position: relative;
+
+    &:after {
+
+        display: inline-block;
+        width: 100%;
         height: 0px;
+        border-top: 10px dotted $primary-50;
+    
+        content: "";
+    
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+    }
 
-        border-bottom: 10px dotted $primary-50;
+    @include bp("desktop") {
+        
+        &:after {
+
+            bottom: -96px;
+        }
+    }
+} 
+
+.card--rigth {
+
+    position: relative;
+    padding-top: 32px;
+
+    &:after {
+
+        display: inline-block;
+        width: 100%;
+        height: 0px;
+        border-bottom: 10px dotted $secondary-100;
+    
+        content: "";
+    
+        position: absolute;
+        top: -16px;
+        z-index: 2;
+    }
+
+    @include bp("desktop") {
+
+        padding-top: 0;
+        
+        &:after {
+
+            width: 0px;
+            height: 95%;
+
+            border-left: 10px dotted $secondary-100;
+            top: 5px;
+
+        }
+    }
+}
+
+.card--small {
+
+    @include bp("desktop") {
+        
+        &:after {
+
+            height: 65%;
+            top: 36px;
+        }
     }
 }

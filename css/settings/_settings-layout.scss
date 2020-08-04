@@ -98,12 +98,6 @@
       grid-column: 2 / 3;
     }
 
-    .dots {
-
-      width: auto;
-      grid-column: 2 / 3;
-    }
-
     .main__program {
       grid-column: 1 / 4;
     }
@@ -174,26 +168,6 @@
         grid-row: 2 / 3;
 
         padding-top: 35px;
-      }
-
-      .dots {
-
-        width: 0;
-        height: auto;
-
-        &--short {
-
-          grid-column: 3 / 4;
-          grid-row: 2 / 3;
-
-          margin-top: 35px;
-        }
-
-        &--long {
-
-          grid-column: 3 / 4;
-          grid-row: 5 / 6;
-        }
       }
 
       .main__skils {
@@ -303,10 +277,6 @@
 
       display: grid;
       grid-template-columns: 1fr 335px 1fr;
-    }
-
-    .dots--trainers {
-      grid-column: 2 / 3;
     }
   }
 

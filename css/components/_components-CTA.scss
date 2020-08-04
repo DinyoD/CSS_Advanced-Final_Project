@@ -92,6 +92,7 @@
   /*DESKTOP STYLES */
 
   @include bp("desktop") {
+
     height: 112px;
     padding: 0;
     grid-template-columns: 291px auto 2px auto 2px auto 2px auto;
@@ -99,8 +100,10 @@
 
     &__btn {
       justify-self: center;
-
       text-align: center;
+      .btn {
+        max-width: 100%;
+      }
     }
 
     &__info {

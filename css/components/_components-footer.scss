@@ -103,7 +103,7 @@
       &--kids,
       &--courses {
 
-        text-align: right;
+        padding-left: 80px;
       }
     }
   }
@@ -129,14 +129,20 @@
       padding: 64px 0;
 
       .footer__section {
+
+        &--kids,
+        &--courses {
+
+          grid-row: 1 / 3;
+          padding-left: 0;
+        }
+
         &--kids {
           grid-column: 1 / 2;
-          grid-row: 1 / 3;
         }
 
         &--courses {
           grid-column: 2 / 3;
-          grid-row: 1 / 3;
         }
 
         &--initiatives {
