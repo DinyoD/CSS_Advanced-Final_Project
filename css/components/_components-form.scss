@@ -1,0 +1,95 @@
+.form {
+
+  &--applaying,
+  &--contact {
+    .input,
+    .textarea {
+      padding: 16px;
+      height: 52px;
+      border: 1px solid $white;
+      border-radius: 6px;
+
+      &::placeholder {
+
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  &--applaying {
+    display: grid;
+    row-gap: 36px;
+
+    .input {
+      color: $white;
+      background-color: $blue-300;
+
+      &::placeholder {
+        color: $white;
+      }
+    }
+
+    .btn {
+      margin-top: 10px;
+      height: 48px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+
+    /*DESKTOP STYLES */
+
+    @include bp("desktop") {
+      grid-template-rows: none;
+      grid-template-columns: repeat(3, 228px) auto;
+      align-items: start;
+      margin: 0 auto 112px auto;
+
+      column-gap: 32px;
+
+      .btn {
+        margin-left: 16px;
+        margin-top: 0;
+        width: 140px;
+      }
+    }
+  }
+
+  &--contact {
+    display: grid;
+    row-gap: 30px;
+
+    &__title {
+      color: $primary-300;
+      text-align: center;
+      margin-bottom: 2px;
+    }
+
+    &__inputs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 32px;
+
+    }
+
+    .input,
+    .textarea {
+
+        background-color: $grey-250;
+        border-color: $grey-500;
+
+        &::placeholder {
+          color: $grey-500;
+        }
+    }
+
+    .textarea {
+        width: 100%;
+        height: 192px;
+    }
+
+    .btn {
+        width: fit-content;
+    }
+  }
+}

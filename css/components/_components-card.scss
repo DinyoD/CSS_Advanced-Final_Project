@@ -198,16 +198,16 @@
 
   width: 520px;
   height: 382px;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
 
   padding: 32px;
 
   background-color: $white;
   border-radius: 12px;
   @include BoxShadow(1);
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr auto;
 
   &__title {
 
@@ -242,10 +242,17 @@
     width: 242px;
     margin: 0 auto;
   }
+}
 
-  position: absolute;
-  top: 128px;
-  z-index: 2;
+.card--transport {
 
+  &__title {
+    color: $primary-300;
+    margin-bottom: 18px;
+  }
 
+  .item {
+
+    padding-right: 10px;
+  }
 }

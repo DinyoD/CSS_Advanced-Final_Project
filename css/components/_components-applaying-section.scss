@@ -1,5 +1,7 @@
 .applying-section {
+
   &__container {
+
     margin: 64px 0;
 
     grid-column: 2 / 3;
@@ -10,9 +12,11 @@
   }
 
   &__description {
+
     margin-bottom: 32px;
 
     &__title {
+
       margin-bottom: 24px;
 
       font-weight: bold;
@@ -21,45 +25,25 @@
     }
   }
 
-  &__form {
-    display: grid;
-    row-gap: 36px;
 
-    &__input {
-      padding: 16px;
-      color: $white;
-      background-color: $blue-300;
-
-      height: 52px;
-
-      border: 1px solid $white;
-      border-radius: 6px;
-
-      &::placeholder {
-        color: $white;
-        font-size: 16px;
-        line-height: 19px;
-      }
-    }
-
-    .btn {
-      margin-top: 10px;
-      height: 48px;
-      padding-top: 14px;
-      padding-bottom: 14px;
-    }
-  }
+    /*DESKTOP STYLES */
 
   @include bp("desktop") {
 
     &__container {
+
       width: 936px;
       margin: 64px auto 0 auto;
     }
 
     &__description {
+
+      width: 850px;
+      justify-self: center;
+
       &__title {
 
+        margin-bottom: 24px;
         text-align: center;
 
         font-weight: 600;
@@ -68,22 +52,8 @@
       }
 
       &__text {
-        width: 850px;
-        margin: 0 auto;
+        padding: 0 8px;
         text-align: center;
-      }
-    }
-
-    &__form {
-      grid-template-rows: none;
-      grid-template-columns: repeat(4, 228px);
-      margin: 0 auto 112px auto;
-
-      column-gap: 32px;
-
-      .btn {
-        margin: 0 16px;
-        width: 140px;
       }
     }
   }
