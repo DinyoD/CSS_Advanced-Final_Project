@@ -3,8 +3,7 @@
 @import '../css/settings/_settings-colors';
 @import '../css/settings/_settings-box-shadows';
 @import '../css/settings/_settings-breakpoint';
-@import '../css/settings/_settings-layout';
-
+@import '../css/settings/_settings-animations';
 
 @import '../css/generic/_generic-reset';
 
@@ -12,6 +11,10 @@
 
 @import '../css/objects/_objects-container';
 @import '../css/objects/_objects-displays';
+@import '../css/objects/_objects-layout';
+@import '../css/objects/objects-layout--page-courses';
+@import '../css/objects/objects-layout--page-trainers';
+@import '../css/objects/objects-layout--page-contact';
 
 @import '../css/components/_components-header';
 @import '../css/components/_components-navigation';
@@ -26,4 +29,5 @@
 @import '../css/components/_components-form';
 
 @import '../css/utilities/utilities-dots-border';
+@import '../css/utilities/utilities-animations';
 

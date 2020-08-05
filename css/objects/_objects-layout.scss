@@ -1,0 +1,53 @@
+
+.page {
+    &__header,
+    &__label,
+    &__footer,
+    &__main {
+      display: grid;
+      grid-template-columns: 20px 1fr 20px;
+    }
+  
+    &__header {
+      height: 72px;
+    }
+  
+    &__footer {
+      height: 567px;
+    }
+  
+      /* TABLET STYLES */
+  
+    @include bp("tablet") {
+  
+      &__header,
+      &__label,
+      &__footer,
+      &__main {
+        display: grid;
+        grid-template-columns: 100px 1fr 100px;
+      }
+  
+    }
+  
+    /* DESKTOP STYLES */
+  
+    @include bp("desktop") {
+      &__header,
+      &__label,
+      &__footer,
+      &__main {
+        grid-template-columns: 1fr 1290px 1fr;
+      }
+  
+      &__header {
+        height: 74px;
+      }
+  
+      &__footer {
+        height: 324px;
+      }
+    }
+  }
+
+  

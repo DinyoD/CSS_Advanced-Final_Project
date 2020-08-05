@@ -80,8 +80,10 @@
       display: grid;
 
       &__item {
+
         margin-bottom: 12px;
-        a {
+
+        .footer__link {
           text-transform: capitalize;
           color: $grey-200;
           line-height: 19px;
@@ -111,12 +113,21 @@
   /*DESKTOP STYLES */
 
   @include bp("desktop") {
+
     .footer__img {
       display: block;
       grid-column: 1 / 2;
 
       position: absolute;
       bottom: -3.5px;
+
+      transition: transform 0.5s, ease-in;
+
+      &:hover {
+         
+        transform: rotate(-5deg);
+        cursor: pointer;
+      }
     }
 
     .footer__sections-wrapper {
@@ -158,6 +169,15 @@
           .footer__section__title {
             display: inline-block;
           }
+
+          .footer__link {
+
+            transition: color 0.2s ease-in-out;
+
+            &:hover {
+              color: #41bead;
+            }
+          }
         }
 
         &--rights {
@@ -177,27 +197,24 @@
           .fab {
             margin-bottom: 48px;
             margin-top: 8px;
-
-            &:hover {
-              color: #41bead;
-            }
           }
         }
       }
     }
 
     .footer__list {
+
       display: grid;
 
-      &__item {
-        a {
-          text-transform: capitalize;
-          color: $grey-200;
-          line-height: 1.125rem;
+      .footer__link {
+        text-transform: capitalize;
+        color: $grey-200;
+        line-height: 19px;
 
-          &:hover {
-            color: #41bead;
-          }
+        transition: color 0.2s ease-out;
+
+        &:hover {
+          color: #41bead;
         }
       }
 

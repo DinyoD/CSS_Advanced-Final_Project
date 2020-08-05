@@ -37,41 +37,45 @@
     order: 5;
     cursor: pointer;
 
-    &:hover ~ .header__nav{
-      width: 100%;
+    // &:hover ~ .header__nav{
 
-      position: absolute;
-      bottom: -250px;
-      z-index: 2;
-      left: 0;
-      right: 0;
-      .nav__list {
+    //   width: 100%;
 
-        width: 100%;
+    //   position: absolute;
+    //   bottom: -250px;
+    //   z-index: 2;
+    //   left: 0;
+    //   right: 0;
 
-        display: grid;
-        grid-template-rows: repeat(5, 50px);
+    //   .nav__list {
+
+    //     width: 100%;
+
+    //     display: grid;
+    //     grid-template-rows: repeat(5, 50px);
         
-        justify-content: stretch;
-        align-items: stretch;
+    //     justify-content: stretch;
+    //     align-items: stretch;
 
-        li {
+    //     &__item {
 
-          background-color: $grey-100;
-          border-bottom: 0.5px solid $grey-500;
-          align-content: center;
-          padding: 15px 20px;
+    //       background-color: $grey-100;
+    //       border-bottom: 0.5px solid $grey-500;
+    //       // align-content: center;
+    //       // padding: 15px 20px;
 
-          a {
+    //       // a {
 
-            color: $grey-500;
-            font-weight: bold;
+    //       //   color: $grey-500;
+    //       //   font-weight: bold;
 
-          }
-        }
+    //       // }
+    //     }
 
-      }
-    }
+
+
+    //   }
+    // }
   }
 
   /* DESKTOP STYLES */

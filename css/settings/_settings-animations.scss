@@ -1,0 +1,46 @@
+@import url("../settings/_settings-colors.scss");
+
+
+@keyframes fancy-display {
+
+    from {
+        padding-top: -40px;
+        padding-left: -40px;
+    }
+
+    to {
+        padding-top: 20px;;
+        padding-left: 20px;
+    }
+}
+
+@keyframes color-change {
+
+    0% {
+        color: $grey-100;
+    }
+
+    50% {
+        color: $grey-200;
+    }
+
+    100% {
+        color: $grey-500;
+    }
+}
+
+@keyframes opacity-change {
+
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}

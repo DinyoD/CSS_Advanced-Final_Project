@@ -1,0 +1,72 @@
+
+  .page--trainers {
+  
+    &__label {
+      height: 356px;
+    }
+  
+    &__main {
+  
+      &__top-trainers {
+  
+        margin-top: 48px;
+        grid-column: 2 / 3;
+      }
+  
+      &__all-trainers {
+  
+        margin-top: 64px;
+        grid-column: 2 / 3;
+  
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        justify-content: center;
+      }
+  
+      &__applying-section {
+  
+        height: 674px;
+  
+        background-color: $blue-300;
+        border-top: 12px solid $blue-200;
+        grid-column: 1 / 4;
+  
+        display: grid;
+        grid-template-columns: 1fr 335px 1fr;
+      }
+    }
+  
+    @include bp("desktop") {
+  
+      &__label {
+        height: 256px;
+      }
+  
+      &__main {
+  
+        &__top-trainers {
+  
+          margin: 96px 0;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          column-gap: 36px;
+        }
+  
+        &__all-trainers {
+  
+          width: 1064px;
+          margin: 64px auto 0 auto;
+  
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(4, 1fr);
+        }
+  
+        &__applying-section {
+          height: 412px;
+  
+          grid-template-columns: 1fr 1290px 1fr;
+        }
+      }
+    }
+  }

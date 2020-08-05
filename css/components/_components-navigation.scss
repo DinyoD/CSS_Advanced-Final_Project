@@ -8,16 +8,19 @@
   @include bp('desktop') {
     
     display: flex;
-      li {
+      &__item {
         margin-right: 2.25em;
         position: relative;
       }
       
-      a {
+      &__link {
         font-weight: 600;
         font-size: 0.81em;
         line-height: 1.25;
         color: $grey-700;
+
+        transition: color 0.2s ease-in-out;
+
         &:hover {
           color: $secondary-800;
         }
