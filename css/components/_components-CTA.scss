@@ -9,7 +9,7 @@
   @include BoxShadow(1);
 
   display: grid;
-  grid-template-rows: 144px 100px 2px 100px 2px 100px 2px 100px;
+  grid-template-rows: 144px repeat(4, 104.5px);
 
   position: absolute;
   top: 245px;
@@ -23,6 +23,7 @@
     .btn {
       width: 100%;
     }
+
   }
 
   &__info {
@@ -35,6 +36,8 @@
     grid-template-rows: 26px 26px;
     column-gap: 24px;
     align-items: center;
+
+    position: relative;
 
     .info__icon {
       width: 32px;
@@ -64,6 +67,20 @@
 
       color: $secondary-800;
     }
+
+    &:not(:last-child)::after {
+
+      display: block;
+      width: 24px;
+      height: 2px;
+      content: "";
+      background-color: $grey-100;
+
+      position: absolute;
+      bottom: -24px;
+
+      z-index: 3;
+    }
   }
 
   hr {
@@ -84,7 +101,11 @@
 
     &__info{
 
-      justify-self: center;
+      padding-left: 140px;;
+      
+      &:not(:last-child)::after {
+        width: 240px;
+      }
     }
   }
 
@@ -95,7 +116,7 @@
 
     height: 112px;
     padding: 0;
-    grid-template-columns: 291px auto 2px auto 2px auto 2px auto;
+    grid-template-columns: 290px repeat(4, 240px);
     grid-template-rows: none;
 
     &__btn {
@@ -107,12 +128,24 @@
     }
 
     &__info {
-      justify-self: center;
-    }
 
-    hr {
-      width: 2px;
-      height: 24px;
+      padding-left: 0;
+
+      justify-self: center;
+
+      &:not(:last-child)::after {
+
+        width: 2px;
+        height: 24px;
+
+        bottom: 16px;
+        right: -32px;
+      }
+
+      &:nth-child(2) {
+  
+        margin-left: 36px;
+      }
     }
   }
 }
