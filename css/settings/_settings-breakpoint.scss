@@ -9,5 +9,4 @@ $breakpoints: (
   @media #{inspect(map-get($breakpoints, $breakpoint))} {
     @content;
   }
-
 }

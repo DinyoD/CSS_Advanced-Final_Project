@@ -104,7 +104,9 @@
       padding-left: 140px;;
       
       &:not(:last-child)::after {
+
         width: 240px;
+        right: -84px;
       }
     }
   }

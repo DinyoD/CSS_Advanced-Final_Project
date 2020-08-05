@@ -24,13 +24,13 @@
   
         position: relative;
   
-        img {
+        &__img{
   
           max-width: 100%;
           height: auto;
         }
   
-        a {
+        &__btn {
   
           position: absolute;
           top: 50%;
@@ -39,7 +39,7 @@
         }
       }
   
-      .card {
+      .card--info {
         grid-column: 2 / 3;
       }
   
@@ -94,17 +94,6 @@
           grid-column: 5 / 6;
           grid-row: 1 / 2;
           justify-self: end;
-          align-self: center;
-  
-          position: relative;
-  
-          a {
-  
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-          }
         }
   
         .main__for-who {

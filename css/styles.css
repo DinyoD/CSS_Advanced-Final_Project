@@ -270,12 +270,12 @@ p {
   position: relative;
 }
 
-.page--course__main .main__information__video img {
+.page--course__main .main__information__video__img {
   max-width: 100%;
   height: auto;
 }
 
-.page--course__main .main__information__video a {
+.page--course__main .main__information__video__btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -283,7 +283,7 @@ p {
           transform: translate(-50%, -50%);
 }
 
-.page--course__main .card {
+.page--course__main .card--info {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
@@ -341,17 +341,6 @@ p {
     grid-row: 1 / 2;
     -ms-grid-column-align: end;
         justify-self: end;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    position: relative;
-  }
-  .page--course__main .main__information__video a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
   }
   .page--course__main .main__for-who {
     -ms-grid-column: 2;
@@ -674,8 +663,8 @@ p {
     font-size: 0.81em;
     line-height: 1.25;
     color: #565656;
-    -webkit-transition: color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out;
   }
   .nav__list__link:hover {
     color: #FF9100;
@@ -911,8 +900,8 @@ p {
     display: inline-block;
   }
   .page__footer .footer__sections-wrapper .footer__section--social .footer__link {
-    -webkit-transition: color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.25s ease-out;
+    transition: color 0.25s ease-out;
   }
   .page__footer .footer__sections-wrapper .footer__section--social .footer__link:hover {
     color: #41bead;
@@ -946,8 +935,8 @@ p {
     text-transform: capitalize;
     color: #E6E6E6;
     line-height: 19px;
-    -webkit-transition: color 0.2s ease-out;
-    transition: color 0.2s ease-out;
+    -webkit-transition: color 0.25s ease-out;
+    transition: color 0.25s ease-out;
   }
   .page__footer .footer__list .footer__link:hover {
     color: #41bead;
@@ -1172,6 +1161,7 @@ p {
   }
   .site__label__CTA__info:not(:last-child)::after {
     width: 240px;
+    right: -84px;
   }
 }
 
@@ -1208,7 +1198,7 @@ p {
   }
 }
 
-.card {
+.card--info {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 48px auto;
@@ -1221,7 +1211,7 @@ p {
   /* DESKTOP STYLES */
 }
 
-.card__icon {
+.card--info__icon {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
@@ -1230,7 +1220,7 @@ p {
   grid-column: 1 / 2;
 }
 
-.card__title {
+.card--info__title {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
@@ -1239,7 +1229,7 @@ p {
   grid-column: 2 / 3;
 }
 
-.card__text {
+.card--info__text {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
@@ -1248,14 +1238,14 @@ p {
   grid-column: 1 / 3;
 }
 
-.card__text .card__link {
+.card--info__text .card__link {
   text-decoration: underline;
   text-transform: none;
   color: #FF9100;
 }
 
 @media (min-width: 1330px) {
-  .card {
+  .card--info {
     width: 640px;
     -ms-grid-columns: 63px auto;
         grid-template-columns: 63px auto;
@@ -1264,10 +1254,10 @@ p {
     -ms-flex-line-pack: start;
         align-content: start;
   }
-  .card__title, .card__text {
+  .card--info__title, .card--info__text {
     max-width: 545px;
   }
-  .card__text {
+  .card--info__text {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
@@ -1275,24 +1265,24 @@ p {
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
   }
-  .card--program {
+  .card--info--program {
     width: 740px;
     row-gap: 24px;
   }
-  .card--program .card__title,
-  .card--program .card__text {
+  .card--info--program .card__title,
+  .card--info--program .card__text {
     max-width: 675px;
   }
-  .card--small .card__text,
-  .card--small .card__title {
+  .card--info--small .card__text,
+  .card--info--small .card__title {
     max-width: 488px;
   }
-  .card--rigth {
+  .card--info--rigth {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
   }
-  .card--centered {
+  .card--info--centered {
     -ms-flex-line-pack: center;
         align-content: center;
   }
@@ -1684,8 +1674,8 @@ p {
   }
 }
 
-.form--applaying .input,
-.form--applaying .textarea, .form--contact .input,
+.form--applaying .input, .form--contact .input,
+.form--applaying .textarea,
 .form--contact .textarea {
   padding: 16px;
   height: 52px;
@@ -1693,29 +1683,29 @@ p {
   border-radius: 6px;
 }
 
-.form--applaying .input::-webkit-input-placeholder,
-.form--applaying .textarea::-webkit-input-placeholder, .form--contact .input::-webkit-input-placeholder,
+.form--applaying .input::-webkit-input-placeholder, .form--contact .input::-webkit-input-placeholder,
+.form--applaying .textarea::-webkit-input-placeholder,
 .form--contact .textarea::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 19px;
 }
 
-.form--applaying .input:-ms-input-placeholder,
-.form--applaying .textarea:-ms-input-placeholder, .form--contact .input:-ms-input-placeholder,
+.form--applaying .input:-ms-input-placeholder, .form--contact .input:-ms-input-placeholder,
+.form--applaying .textarea:-ms-input-placeholder,
 .form--contact .textarea:-ms-input-placeholder {
   font-size: 16px;
   line-height: 19px;
 }
 
-.form--applaying .input::-ms-input-placeholder,
-.form--applaying .textarea::-ms-input-placeholder, .form--contact .input::-ms-input-placeholder,
+.form--applaying .input::-ms-input-placeholder, .form--contact .input::-ms-input-placeholder,
+.form--applaying .textarea::-ms-input-placeholder,
 .form--contact .textarea::-ms-input-placeholder {
   font-size: 16px;
   line-height: 19px;
 }
 
-.form--applaying .input::placeholder,
-.form--applaying .textarea::placeholder, .form--contact .input::placeholder,
+.form--applaying .input::placeholder, .form--contact .input::placeholder,
+.form--applaying .textarea::placeholder,
 .form--contact .textarea::placeholder {
   font-size: 16px;
   line-height: 19px;
@@ -1855,12 +1845,12 @@ p {
   }
 }
 
-.card--rigth {
+.card--info--rigth {
   position: relative;
   padding-top: 32px;
 }
 
-.card--rigth:after {
+.card--info--rigth:after {
   display: inline-block;
   width: 100%;
   height: 0px;
@@ -1872,10 +1862,10 @@ p {
 }
 
 @media (min-width: 1330px) {
-  .card--rigth {
+  .card--info--rigth {
     padding-top: 0;
   }
-  .card--rigth:after {
+  .card--info--rigth:after {
     width: 0px;
     height: 95%;
     border-left: 10px dotted #FFECB3;
@@ -1885,7 +1875,7 @@ p {
 }
 
 @media (min-width: 1330px) {
-  .card--small:after {
+  .card--info--small:after {
     height: 65%;
     top: 36px;
   }
@@ -1959,8 +1949,8 @@ p {
   border-bottom: 0.5px solid #919191;
   -webkit-animation-name: fancy-display;
           animation-name: fancy-display;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -1980,53 +1970,53 @@ p {
 }
 
 .page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(1) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(2) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(3) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(4) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-.page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(5) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(1) .nav__list__link {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-.page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(2) .nav__list__link {
+.page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(5) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
+.page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(1) .nav__list__link {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(2) .nav__list__link {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
 .page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(3) .nav__list__link {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(4) .nav__list__link {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .page__header .icon--menu:hover ~ .header__nav .nav__list__item:nth-child(5) .nav__list__link {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 @media (min-width: 1330px) {

@@ -172,7 +172,7 @@
 
           .footer__link {
 
-            transition: color 0.2s ease-in-out;
+            transition: color 0.25s ease-out;
 
             &:hover {
               color: #41bead;
@@ -211,7 +211,7 @@
         color: $grey-200;
         line-height: 19px;
 
-        transition: color 0.2s ease-out;
+        transition: color 0.25s ease-out;
 
         &:hover {
           color: #41bead;

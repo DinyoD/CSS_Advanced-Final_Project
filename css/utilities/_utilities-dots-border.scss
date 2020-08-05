@@ -26,7 +26,7 @@
     }
 } 
 
-.card--rigth {
+.card--info--rigth {
 
     position: relative;
     padding-top: 32px;
@@ -61,7 +61,7 @@
     }
 }
 
-.card--small {
+.card--info--small {
 
     @include bp("desktop") {
         

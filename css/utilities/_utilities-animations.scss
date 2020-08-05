@@ -26,7 +26,7 @@
       border-bottom: 0.5px solid $grey-500;
 
       animation-name: fancy-display;
-      animation-duration: 0.4s;
+      animation-duration: 0.3s;
       animation-timing-function: ease-in-out;
       animation-fill-mode: forwards;
 
@@ -43,13 +43,13 @@
 
     @for $i from 1 to 6 {
       &__item:nth-child(#{$i}) {
-        animation-delay: 0.2s * $i;
+        animation-delay: 0.1s * $i - 0.1s;
       }
     }
 
     @for $i from 1 to 6 {
       &__item:nth-child(#{$i}) .nav__list__link {
-        animation-delay: 0.2s * $i;
+        animation-delay: 0.1s * $i - 0.1s;
       }
     }
   }
