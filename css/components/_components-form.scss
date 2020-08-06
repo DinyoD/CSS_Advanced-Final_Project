@@ -64,7 +64,7 @@
   &__title {
     color: $primary-300;
     text-align: center;
-    margin-bottom: 2px;
+    margin-bottom: -5px;
   }
 
   &__inputs {
@@ -90,5 +90,6 @@
 
   .btn {
     width: fit-content;
+    
   }
 }

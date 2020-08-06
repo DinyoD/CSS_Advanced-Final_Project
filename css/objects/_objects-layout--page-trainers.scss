@@ -9,13 +9,14 @@
   
       &__top-trainers {
   
-        margin-top: 48px;
+        margin-top: 50px;
         grid-column: 2 / 3;
       }
   
       &__all-trainers {
   
-        margin-top: 64px;
+        margin-top: 52px;
+        margin-bottom: 42px;
         grid-column: 2 / 3;
   
         display: grid;
@@ -55,11 +56,13 @@
         &__all-trainers {
   
           width: 1064px;
-          margin: 64px auto 0 auto;
+          margin: 107px auto 75px auto;
   
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           grid-template-rows: repeat(4, 1fr);
+          column-gap: 24px;
+          row-gap: 14px;
         }
   
         &__applying-section {

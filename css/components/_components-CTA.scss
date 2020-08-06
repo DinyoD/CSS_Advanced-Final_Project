@@ -1,4 +1,4 @@
-.site__label__CTA {
+.page__label__CTA {
   grid-column: 2 / 3;
   background-color: $white;
   border-radius: 12px;
@@ -27,6 +27,7 @@
   }
 
   &__info {
+
     justify-self: start;
     align-self: center;
 
@@ -35,6 +36,7 @@
     grid-template-columns: 32px auto;
     grid-template-rows: 26px 26px;
     column-gap: 24px;
+    row-gap: 6px;
     align-items: center;
 
     position: relative;
@@ -47,24 +49,28 @@
       grid-column: 1 / 2;
     }
 
+    .info__value,
+    .info__label {
+
+      margin-bottom: 0;
+      font-weight: bold;
+      grid-column: 2 / 3;
+    }
+
     .info__label {
       grid-row: 1 / 2;
-      grid-column: 2 / 3;
 
-      font-weight: bold;
       font-size: 18px;
       line-height: 22px;
       color: $grey-700;
     }
 
     .info__value {
-      grid-row: 2 / 3;
-      grid-column: 2 / 3;
 
-      font-weight: bold;
+      grid-row: 2 / 3;
+
       font-size: 20px;
       line-height: 24px;
-
       color: $secondary-800;
     }
 
@@ -83,12 +89,11 @@
     }
   }
 
-  hr {
-    transform: rotate(-45%);
-    width: 24px;
-    height: 2px;
-    background-color: $grey-100;
-    border: none;
+  @for $i from 2 to 6 {
+    &__info:nth-child(#{$i}) {
+
+      padding-top: 3px * (7 - $i);
+    }
   }
 
   /* TABLET STYLES */
@@ -101,12 +106,19 @@
 
     &__info{
 
-      padding-left: 140px;;
+      padding-left: 140px;
       
       &:not(:last-child)::after {
 
         width: 240px;
         right: -84px;
+      }
+    }
+
+    @for $i from 2 to 6 {
+      &__info:nth-child(#{$i}) {
+  
+        padding-top: 0px;
       }
     }
   }

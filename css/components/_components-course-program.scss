@@ -1,11 +1,12 @@
 
 .main__program {
+  
   background-color: $secondary-400;
   position: relative;
 
   display: grid;
   grid-template-columns: 20px 1fr 20px;
-
+  margin: 32px 0 48px 0;
   padding: 64px 0;
 
   &__card {
@@ -87,6 +88,7 @@
 
   @include bp("tablet") {
 
+    margin: 0;
     grid-template-columns: 100px 1fr 100px;
   }
   
@@ -94,9 +96,9 @@
   /* DESKTOP STYLES */
 
   @include bp("desktop") {
-    grid-template-columns: 1fr 65px 675px 550px 1fr;
-    grid-template-rows: auto 34px 248px;
 
+    grid-template-columns: 1fr 65px 685px 540px 1fr;
+    grid-template-rows: auto 34px 248px;
     row-gap: 12px;
 
     &__card {

@@ -10,7 +10,7 @@
     height: 60%;
     margin-right: auto;
 
-    &-desktop {
+    &__img--desktop {
       display: none;
     }
   }
@@ -19,7 +19,7 @@
     height: 20px;
     margin-right: 16px;
 
-    &-desktop {
+    &__img--desktop {
       display: none;
     }
   }
@@ -27,7 +27,7 @@
   .icon--search {
     margin-right: 20px;
 
-    &-desktop {
+    &__img--desktop {
       display: none;
     }
   }
@@ -46,11 +46,11 @@
     .logo--su-kids,
     .icon--triangle,
     .icon--search {
-      &-mobile {
+      &__img--mobile {
         display: none;
       }
 
-      &-desktop {
+      &__img--desktop {
         display: inline-block;
       }
     }
