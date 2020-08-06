@@ -5,7 +5,6 @@
     margin: 64px 0;
 
     grid-column: 2 / 3;
-
     display: grid;
 
     color: $white;
@@ -55,6 +54,7 @@
       }
 
       &__text {
+        
         padding: 0 8px;
         margin-bottom: 0px;
         text-align: center;

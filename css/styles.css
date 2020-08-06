@@ -687,16 +687,16 @@ p {
 }
 
 .btn {
-  font-weight: 800;
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 20px;
   padding: 14px 32px;
   border: none;
   border-radius: 100px;
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   background-color: #FF9100;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
   color: #FFFFFF;
   cursor: pointer;
   -webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
@@ -717,14 +717,14 @@ p {
 }
 
 .btn--white {
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 16px;
-  background-color: #FFFFFF;
-  color: #FF9100;
   border: 1px solid #FF9100;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FF9100;
 }
 
 .page__footer {
@@ -1024,6 +1024,7 @@ p {
 .page--trainers__label {
   padding-top: 64px;
   background-color: #FFB402;
+  /* DESKTOP STYLES */
 }
 
 .page--trainers__label__wrapper {
@@ -1058,16 +1059,16 @@ p {
   grid-column: 2 / 3;
   background-color: #FFFFFF;
   border-radius: 12px;
-  padding: 0 24px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  padding: 0 24px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 144px (104.5px)[4];
       grid-template-rows: 144px repeat(4, 104.5px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 245px;
   right: 0;
@@ -1241,9 +1242,9 @@ p {
       grid-template-columns: 48px auto;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
+  row-gap: 16px;
   -ms-flex-line-pack: start;
       align-content: start;
-  row-gap: 16px;
   /* DESKTOP STYLES */
 }
 
@@ -1357,9 +1358,9 @@ p {
 }
 
 .card--trainer__name {
-  color: #41BEAD;
-  text-align: center;
   margin-bottom: 10px;
+  text-align: center;
+  color: #41BEAD;
 }
 
 .card--trainer__position {

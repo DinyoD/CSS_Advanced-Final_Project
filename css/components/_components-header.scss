@@ -7,6 +7,7 @@
   position: relative;
 
   .logo--su-kids {
+
     height: 60%;
     margin-right: auto;
 
@@ -16,6 +17,7 @@
   }
 
   .icon--triangle {
+
     height: 20px;
     margin-right: 16px;
 
@@ -25,6 +27,7 @@
   }
 
   .icon--search {
+
     margin-right: 20px;
 
     &__img--desktop {
@@ -33,10 +36,10 @@
   }
 
   .icon--menu {
+
     margin-left: 24px;
     order: 5;
     cursor: pointer;
-
   }
 
   /* DESKTOP STYLES */
@@ -58,6 +61,4 @@
       display: none;
     }
   }
-
-
 }

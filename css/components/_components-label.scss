@@ -1,4 +1,5 @@
 .page--course__label {
+
   padding-top: 64px;
 
   background-color: $blue-400;
@@ -10,6 +11,7 @@
   }
 
   .label {
+
     padding: 4px 8px;
     font-weight: bold;
     font-size: 12px;
@@ -26,6 +28,7 @@
   }
 
   .title {
+
     color: $white;
     margin: 24px 20px;
     text-align: center;
@@ -48,7 +51,9 @@
   /* DESKTOP STYLES */
 
   @include bp("desktop") {
+
     .title {
+
       width: 645px;
       margin: 24px auto;
 
@@ -65,9 +70,7 @@
   background-color: $secondary-600;
 
   &__wrapper {
-
     grid-column: 2 / 3;
-
   }
 
   &__title,
@@ -81,14 +84,17 @@
     margin-bottom: 24px;
   }
 
+  /* DESKTOP STYLES */
 
   @include bp('desktop') {
 
     &__title {
+
       width: 305px;
       margin: 0 auto 24px auto;
     }
     &__text {
+      
       width: 850px;
       margin: 0 auto;
     }

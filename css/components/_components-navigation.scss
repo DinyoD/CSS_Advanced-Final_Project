@@ -1,6 +1,5 @@
 .nav__list {
 
-
   display: none;
 
   /*DESKTOP STYLES */
@@ -8,22 +7,25 @@
   @include bp('desktop') {
     
     display: flex;
-      &__item {
-        margin-right: 2.25em;
-        position: relative;
-      }
+
+    &__item {
+
+      margin-right: 2.25em;
+      position: relative;
+    }
+    
+    &__link {
       
-      &__link {
-        font-weight: 600;
-        font-size: 0.81em;
-        line-height: 1.25;
-        color: $grey-700;
+      font-weight: 600;
+      font-size: 0.81em;
+      line-height: 1.25;
+      color: $grey-700;
 
-        transition: color 0.25s ease-in-out;
+      transition: color 0.25s ease-in-out;
 
-        &:hover {
-          color: $secondary-800;
-        }
+      &:hover {
+        color: $secondary-800;
       }
     }
+  }
 }

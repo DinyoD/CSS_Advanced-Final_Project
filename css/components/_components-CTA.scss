@@ -1,15 +1,16 @@
 .page__label__CTA {
+
   grid-column: 2 / 3;
+
   background-color: $white;
   border-radius: 12px;
-  padding: 0 24px;
-
-  align-items: center;
-
   @include BoxShadow(1);
+
+  padding: 0 24px;
 
   display: grid;
   grid-template-rows: 144px repeat(4, 104.5px);
+  align-items: center;
 
   position: absolute;
   top: 245px;
@@ -17,13 +18,13 @@
   left: 0;
 
   &__btn {
+
     align-self: center;
     text-align: center;
 
     .btn {
       width: 100%;
     }
-
   }
 
   &__info {
@@ -42,6 +43,7 @@
     position: relative;
 
     .info__icon {
+
       width: 32px;
       height: 32px;
       text-align: center;
@@ -58,6 +60,7 @@
     }
 
     .info__label {
+
       grid-row: 1 / 2;
 
       font-size: 18px;
@@ -91,7 +94,6 @@
 
   @for $i from 2 to 6 {
     &__info:nth-child(#{$i}) {
-
       padding-top: 3px * (7 - $i);
     }
   }
@@ -134,8 +136,10 @@
     grid-template-rows: none;
 
     &__btn {
+
       justify-self: center;
       text-align: center;
+
       .btn {
         max-width: 100%;
       }
@@ -144,7 +148,6 @@
     &__info {
 
       padding-left: 0;
-
       justify-self: center;
 
       &:not(:last-child)::after {
@@ -156,8 +159,7 @@
         right: -32px;
       }
 
-      &:nth-child(2) {
-  
+      &:nth-child(2) { 
         margin-left: 36px;
       }
     }

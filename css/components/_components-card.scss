@@ -1,29 +1,33 @@
 
 .card--info {
+
   display: grid;
   grid-template-columns: 48px auto;
   grid-template-rows: auto auto;
+  row-gap: 16px;
   align-content: start;
 
-  row-gap: 16px;
-
   &__icon {
+
     grid-row: 1 / 2;
     grid-column: 1 / 2;
   }
 
   &__title {
+
     grid-row: 1 / 2;
     grid-column: 2 / 3;
   }
 
   &__text {
+    
     grid-row: 2 / 3;
     grid-column: 1 / 3;
 
     padding-right: 3px;
 
     .card--info__link {
+
       text-decoration: underline;
       text-transform: none;
       color: $secondary-800;
@@ -32,10 +36,10 @@
 
   &--rigth {
     margin-top: 10px;
-
   }
 
   &--program {
+
     .card--info__title {
       margin-bottom: 4px;
     }
@@ -61,12 +65,12 @@
     }
 
     &__text {
+
       grid-row: 2 / 3;
       grid-column: 2 / 3;
     }
 
     &--program {
-
 
       width: 750px;
       row-gap: 24px;
@@ -76,6 +80,7 @@
       }
 
       .card--info__text {
+
         max-width: 675px;
         max-height: 60px;
         margin-bottom: 0;
@@ -83,6 +88,7 @@
     }
 
     &--small {
+
       .card--info__text,
       .card--info__title {
         max-width: 488px;
@@ -90,6 +96,7 @@
     }
 
     &--rigth {
+
       justify-content: end;
       margin-top: 0;
     }
@@ -114,23 +121,22 @@
 
   &__name {
 
-    color: $primary-300;
+    margin-bottom: 10px;   
     text-align: center;
-    margin-bottom: 10px;
+    color: $primary-300;
   }
 
   &__position {
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
-  
+    line-height: 16px;  
     color: $grey-400;
+
     text-align: center;
   }
 
   &__text__position {
-
     margin-bottom: 26px;
   }
 
@@ -139,6 +145,7 @@
   }
 
   &-small {
+
     margin-bottom: 36px;
     display: grid;
     grid-template-rows: repeat(3, auto);
@@ -166,6 +173,7 @@
     column-gap: 38px;
 
     &__img {
+
       grid-row: 1 / 3;
       grid-column: 1 / 2;
     }
@@ -186,6 +194,7 @@
     }
   
     &__text__bio {
+
       grid-row: 3 / 4 ;
       grid-column: 2 / 3;
     }
@@ -274,12 +283,12 @@
 .card--transport {
 
   &__title {
+    
     color: $primary-300;
     margin-bottom: 18px;
   }
 
   .item {
-
     padding-right: 10px;
   }
 }

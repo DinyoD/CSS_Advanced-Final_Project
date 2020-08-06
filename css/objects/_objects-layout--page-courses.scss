@@ -1,179 +1,179 @@
 
-  .page--course {
+.page--course {
   
-    &__label {
-      height: 302px;
-    }
-  
-    &__main {
-  
-      margin-top: 566px;
-      row-gap: 16px;
-      display: grid;
-      grid-template-columns: 20px 1fr 20px;
-  
-      .main__information {
-        grid-column: 2 / 3;
-      }
-  
-      .main__information__video {
-  
-        grid-column: 2 / 3;
-        justify-self: center;
-        align-self: center;
-        margin-bottom: 44px;
-  
-        position: relative;
-  
-        &__img{
-  
-          max-width: 100%;
-          height: auto;
-        }
-  
-        &__btn {
-  
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-  
-      .card--info {
-        grid-column: 2 / 3;
-      }
-  
-      .main__program {
-        grid-column: 1 / 4;
-      }
-  
-      .main__certificate {
-  
-        grid-column: 1 / 4;
-        display: none;
-      }
-    }
-  
-    &__footer {
-      margin-top: 76px;
-    }
-  
-  
-    /* TABLET STYLES */
-  
-    @include bp("tablet") {
-  
-      &__main {
-        
-        grid-template-columns: 100px 1fr 100px;
-      }
-    }
-  
-    
-    /* DESKTOP STYLES */
-    
-    @include bp("desktop") {
-  
-      &__main {
-  
-        margin-top: 152px;
-  
-        display: grid;
-        grid-template-columns: 1fr 640px 10px 100px 540px 1fr;
-        grid-template-rows: 320px 200px 555px 301px 335px;
-        row-gap: 64px;
-  
-        .main__information {
-  
-          grid-column: 2 / 5;
-          grid-row: 1 / 2;
-        }
-  
-        .main__information__video {
-  
-          grid-column: 5 / 6;
-          grid-row: 1 / 2;
-          justify-self: end;
+  &__label {
+    height: 302px;
+  }
 
-          margin-bottom: 0;
-        }
-  
-        .main__for-who {
-  
-          grid-column: 2 / 3;
-          grid-row: 2 / 3;
-  
-          padding-top: 35px;
-        }
-  
-        .main__skils {
-  
-          grid-column: 4 / 6;
-          grid-row: 2 / 3;
-  
-          padding-top: 35px;
-        }
-  
-        .main__program {
-  
-          grid-column: 1 / 7;
-          grid-row: 3 / 4;
-        }
-  
-        .main__certificate {
-  
-          grid-column: 1 / 7;
-          grid-row: 4 / 5;
-          display: grid;
-          grid-template-columns: 1fr 640px 10px 640px 1fr;
+  &__main {
 
-          margin-bottom: 46px;
-  
-          &__information {
-            grid-column: 2 / 3;
+    margin-top: 566px;
+    row-gap: 16px;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
 
-            padding-top: 18px;
-          }
-  
-          &__image-section {
-  
-            grid-column: 4 / 6;
-            margin-left: 50px;
-  
-            width: 365px;
-            height: 255px;
-            background-color: $grey-300;
-            @include BoxShadow(1);
-  
-            border-radius: 12px;
-            justify-self: center;
-  
-            display: grid;
-            justify-items: center;
-            align-items: center;
-  
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 22px;
-          }
-        }
-  
-        .main__when-and-where {
-  
-          grid-column: 2 / 3;
-          grid-row: 5 / 6;
-        }
-  
-        .main__additional-info {
-  
-          grid-column: 4 / 6;
-          grid-row: 5 / 6;
-        }
+    .main__information {
+      grid-column: 2 / 3;
+    }
+
+    .main__information__video {
+
+      grid-column: 2 / 3;
+      justify-self: center;
+      align-self: center;
+      margin-bottom: 44px;
+
+      position: relative;
+
+      &__img{
+
+        max-width: 100%;
+        height: auto;
       }
-  
-      &__footer {
-        margin-top: 142px;
+
+      &__btn {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
+    }
+
+    .card--info {
+      grid-column: 2 / 3;
+    }
+
+    .main__program {
+      grid-column: 1 / 4;
+    }
+
+    .main__certificate {
+
+      grid-column: 1 / 4;
+      display: none;
     }
   }
+
+  &__footer {
+    margin-top: 76px;
+  }
+
+
+  /* TABLET STYLES */
+
+  @include bp("tablet") {
+
+    &__main {
+      
+      grid-template-columns: 100px 1fr 100px;
+    }
+  }
+
+  
+  /* DESKTOP STYLES */
+  
+  @include bp("desktop") {
+
+    &__main {
+
+      margin-top: 152px;
+
+      display: grid;
+      grid-template-columns: 1fr 640px 10px 100px 540px 1fr;
+      grid-template-rows: 320px 200px 555px 301px 335px;
+      row-gap: 64px;
+
+      .main__information {
+
+        grid-column: 2 / 5;
+        grid-row: 1 / 2;
+      }
+
+      .main__information__video {
+
+        grid-column: 5 / 6;
+        grid-row: 1 / 2;
+        justify-self: end;
+
+        margin-bottom: 0;
+      }
+
+      .main__for-who {
+
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+        padding-top: 35px;
+      }
+
+      .main__skils {
+
+        grid-column: 4 / 6;
+        grid-row: 2 / 3;
+
+        padding-top: 35px;
+      }
+
+      .main__program {
+
+        grid-column: 1 / 7;
+        grid-row: 3 / 4;
+      }
+
+      .main__certificate {
+
+        grid-column: 1 / 7;
+        grid-row: 4 / 5;
+        display: grid;
+        grid-template-columns: 1fr 640px 10px 640px 1fr;
+
+        margin-bottom: 46px;
+
+        &__information {
+
+          grid-column: 2 / 3;
+          padding-top: 18px;
+        }
+
+        &__image-section {
+
+          grid-column: 4 / 6;
+          margin-left: 50px;
+
+          width: 365px;
+          height: 255px;
+          background-color: $grey-300;
+          @include BoxShadow(1);
+
+          border-radius: 12px;
+          justify-self: center;
+
+          display: grid;
+          justify-items: center;
+          align-items: center;
+
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+
+      .main__when-and-where {
+
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+      }
+
+      .main__additional-info {
+
+        grid-column: 4 / 6;
+        grid-row: 5 / 6;
+      }
+    }
+
+    &__footer {
+      margin-top: 142px;
+    }
+  }
+}

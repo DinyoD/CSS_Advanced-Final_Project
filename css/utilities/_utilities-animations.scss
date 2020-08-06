@@ -19,7 +19,6 @@
 
     &__item {
 
-
       display: grid;
 
       background-color: $grey-100;
@@ -58,7 +57,6 @@
 .card--trainer {
 
   @include bp("desktop") {
-
     
     &-small {
 
@@ -70,7 +68,6 @@
         &:hover{
 
           &:after {
-
             animation: opacity-change 0.3s ease-in-out forwards;
           }
         }

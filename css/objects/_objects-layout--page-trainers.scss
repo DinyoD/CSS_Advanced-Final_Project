@@ -1,75 +1,75 @@
 
-  .page--trainers {
+.page--trainers {
   
+  &__label {
+    height: 356px;
+  }
+
+  &__main {
+
+    &__top-trainers {
+
+      margin-top: 50px;
+      grid-column: 2 / 3;
+    }
+
+    &__all-trainers {
+
+      margin-top: 52px;
+      margin-bottom: 42px;
+      grid-column: 2 / 3;
+
+      display: grid;
+      grid-template-rows: repeat(4, auto);
+      justify-content: center;
+    }
+
+    &__applying-section {
+
+      height: 674px;
+
+      background-color: $blue-300;
+      border-top: 12px solid $blue-200;
+      grid-column: 1 / 4;
+
+      display: grid;
+      grid-template-columns: 1fr 335px 1fr;
+    }
+  }
+
+  @include bp("desktop") {
+
     &__label {
-      height: 356px;
+      height: 256px;
     }
-  
+
     &__main {
-  
+
       &__top-trainers {
-  
-        margin-top: 50px;
-        grid-column: 2 / 3;
+
+        margin: 96px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 36px;
       }
-  
+
       &__all-trainers {
-  
-        margin-top: 52px;
-        margin-bottom: 42px;
-        grid-column: 2 / 3;
-  
+
+        width: 1064px;
+        margin: 107px auto 75px auto;
+
         display: grid;
-        grid-template-rows: repeat(4, auto);
-        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 24px;
+        row-gap: 14px;
       }
-  
+
       &__applying-section {
-  
-        height: 674px;
-  
-        background-color: $blue-300;
-        border-top: 12px solid $blue-200;
-        grid-column: 1 / 4;
-  
-        display: grid;
-        grid-template-columns: 1fr 335px 1fr;
-      }
-    }
-  
-    @include bp("desktop") {
-  
-      &__label {
-        height: 256px;
-      }
-  
-      &__main {
-  
-        &__top-trainers {
-  
-          margin: 96px 0;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          column-gap: 36px;
-        }
-  
-        &__all-trainers {
-  
-          width: 1064px;
-          margin: 107px auto 75px auto;
-  
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(4, 1fr);
-          column-gap: 24px;
-          row-gap: 14px;
-        }
-  
-        &__applying-section {
-          height: 412px;
-  
-          grid-template-columns: 1fr 1290px 1fr;
-        }
+
+        height: 412px;
+        grid-template-columns: 1fr 1290px 1fr;
       }
     }
   }
+}

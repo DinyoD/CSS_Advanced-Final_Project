@@ -1,26 +1,25 @@
-.display{
+.display {
 
-    &--horizontal {
-      
-        height: fit-content;  
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  &--horizontal {
 
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    &--footer {
-
-          /*DESKTOP STYLES */
-          
-          @include bp('desktop') {
-            display: grid;
-            grid-template-columns: 220px auto;
-            grid-template-rows: 312px;
-            column-gap: 78px;
+  &--footer {
     
-            position: relative;
-          }
-    }
+    /*DESKTOP STYLES */
 
+    @include bp("desktop") {
+      
+      display: grid;
+      grid-template-columns: 220px auto;
+      grid-template-rows: 312px;
+      column-gap: 78px;
+
+      position: relative;
+    }
+  }
 }

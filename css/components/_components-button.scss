@@ -1,16 +1,15 @@
 .btn {
   
+  padding: 14px 32px;
+  border: none;
+  border-radius: 100px;
+  @include BoxShadow(4);
+  background-color: $secondary-800;
+
   font-weight: 800;
   font-size: 16px;
   text-transform: uppercase;
   line-height: 20px;
-
-  padding: 14px 32px;
-  border: none;
-  border-radius: 100px;
-
-  @include BoxShadow(4);
-  background-color: $secondary-800;
   color: $white;
 
   cursor: pointer;
@@ -22,6 +21,7 @@
   }
 
   &--entry {
+
     font-size: 13px;
     line-height: 16px;
     padding: 10px 22px;
@@ -29,14 +29,13 @@
 
   &--white {
 
+    border: 1px solid $secondary-800;
+    @include BoxShadow(1);
+    background-color: $white;
+
     font-weight: 800;
     font-size: 14px;
     line-height: 16px;
-  
-    background-color: $white;
-    color: $secondary-800;
-    border: 1px solid $secondary-800;
-    @include BoxShadow(1);
-    
+    color: $secondary-800; 
   }
 }
